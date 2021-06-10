@@ -1,5 +1,6 @@
     package com.gmail.gillishaan.splash2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,8 @@ public class ActivityHome extends AppCompatActivity {
         btClickMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ActivityHome.this, "You clicked me. Thank you!", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ActivityHome.this, SecondActivity.class));
+//                Toast.makeText(ActivityHome.this, "You clicked me. Thank you!", Toast.LENGTH_SHORT).show();
             }  
 //                Snackbar.make(v, "Here's a Snackbar", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();

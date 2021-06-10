@@ -11,21 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/ThemeApp"
         tools:ignore="GoogleAppIndexingWarning">
-
+        <activity android:name=".SecondActivity"></activity>
         <activity
             android:name=".ActivitySplash"
             android:label="Splash Page"
             android:theme="@style/ThemeSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ActivityHome"
             android:label="Home Page" />
-
     </application>
 
 </manifest>
