@@ -7,6 +7,14 @@
     android:background="#3F51B5"
     tools:context=".SecondActivity">
 
+<!--SecondActivity    < AutoCompleteTextView-->
+<!--        android:id="@+id/autoCompleteTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
     <Button
         android:id="@+id/btnback"
         android:layout_width="wrap_content"
@@ -16,4 +24,26 @@
         android:text="Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        android:completionThreshold="1"
+        android:fontFamily="cursive"
+        android:hint="Type here to add your sweet"
+
+        android:padding="10dp"
+        android:popupBackground="@android:color/holo_orange_light"
+        android:textColor="@color/black"
+        android:textColorHint="#0E1227"
+        android:textColorLink="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

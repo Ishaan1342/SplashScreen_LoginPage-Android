@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Splash2</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="welcome_to_login_page">Welcome To Login Page</string>
+    <array name="sweets">
+    <item>Chocolate cake</item>
+    <item>Vanilla cake</item>
+    <item>Strawberry cake</item>
+    <item>Cheese cake</item>
+    </array>
 </resources>

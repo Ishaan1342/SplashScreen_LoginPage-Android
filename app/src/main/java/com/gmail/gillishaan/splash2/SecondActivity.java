@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
 public class SecondActivity extends AppCompatActivity {
@@ -26,5 +28,9 @@ public class SecondActivity extends AppCompatActivity {
 //
 //            }
         });
+        AutoCompleteTextView autoCompleteTextView = autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(SecondActivity.this,
+                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.sweets));
+        autoCompleteTextView.setAdapter(arrayAdapter);
     }
 }
