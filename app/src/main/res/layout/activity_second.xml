@@ -1,49 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5"
+    android:background="@drawable/background"
     tools:context=".SecondActivity">
 
-<!--SecondActivity    < AutoCompleteTextView-->
-<!--        android:id="@+id/autoCompleteTextView"-->
-<!--        android:layout_width="match_parent"-->
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edit_back"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:fontFamily="@font/proxima_nova_alt_condensed_regular_italic"
+        android:foregroundTint="#fff"
+        android:hint="Username"
+        android:padding="2dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:hint="Password"
+        android:background="@drawable/edit_back"
+        android:backgroundTint="#fff"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:fontFamily="@font/proxima_nova_alt_condensed_regular_italic"
+        android:foregroundTint="#fff"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/username"/>
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Password"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edit_back"
+        android:backgroundTint="#fff"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:fontFamily="@font/proxima_nova_alt_condensed_regular_italic"
+        android:foregroundTint="#fff"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/password"/>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="5dp"
+        android:text="Register" />
+
+    <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="632dp"
+            android:text="Back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#3F51B5"-->
+<!--    tools:context=".SecondActivity">-->
+
+
+
+
+
+<!--&lt;!&ndash;SecondActivity    < AutoCompleteTextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/autoCompleteTextView"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnback"-->
+<!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="632dp"-->
+<!--        android:text="Back"-->
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/btnback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="632dp"
-        android:text="Back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <AutoCompleteTextView-->
+<!--        android:id="@+id/autoCompleteTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#FFC107"-->
+<!--        android:completionThreshold="1"-->
+<!--        android:fontFamily="cursive"-->
+<!--        android:hint="Type here to add your sweet"-->
 
-    <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FFC107"
-        android:completionThreshold="1"
-        android:fontFamily="cursive"
-        android:hint="Type here to add your sweet"
+<!--        android:padding="10dp"-->
+<!--        android:popupBackground="@android:color/holo_orange_light"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="#0E1227"-->
+<!--        android:textColorLink="#E91E63"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.479"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.264" />-->
 
-        android:padding="10dp"
-        android:popupBackground="@android:color/holo_orange_light"
-        android:textColor="@color/black"
-        android:textColorHint="#0E1227"
-        android:textColorLink="#E91E63"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

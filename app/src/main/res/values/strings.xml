@@ -5,9 +5,9 @@
     <string name="username">Username</string>
     <string name="welcome_to_login_page">Welcome To Login Page</string>
     <array name="sweets">
-    <item>Chocolate cake</item>
-    <item>Vanilla cake</item>
-    <item>Strawberry cake</item>
-    <item>Cheese cake</item>
+        <item>Chocolate cake</item>
+        <item>Vanilla cake</item>
+        <item>Strawberry cake</item>
+        <item>Cheese cake</item>
     </array>
 </resources>
