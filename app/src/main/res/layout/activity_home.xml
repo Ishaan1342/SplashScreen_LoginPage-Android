@@ -7,6 +7,8 @@
     tools:context=".ActivityHome"
     android:background="@drawable/background">
 
+
+
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
@@ -19,6 +21,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
 
 
     <Button
@@ -35,7 +41,11 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
+
+
+
     <EditText
+
         android:id="@+id/lgnpw"
         android:layout_width="0dp"
         android:layout_height="48dp"
@@ -48,13 +58,21 @@
         android:fontFamily="@font/alegreya_sans_sc_medium"
         android:foregroundTint="#fff"
         android:hint="@string/password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:padding="2dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/button"
+        app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" >
+
+</EditText>
+
+
+
+
+
 
     <EditText
         android:id="@+id/lgname"
@@ -91,6 +109,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
